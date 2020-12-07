@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: graemkafkaehtest.servicebus.windows.net:9093
+    properties:
+      sasl:
+        jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="$ConnectionString" password="${eh.connectionstring}";
+        mechanism: PLAIN
+        kerberos:
+          service:
+            name: kafka
+      security.protocol: SASL_SSL

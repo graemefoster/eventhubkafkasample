@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: graemkafkaehtest.servicebus.windows.net:9093
+    bootstrap-servers: ${eh.bootstrapservers}
     properties:
       sasl:
         jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="$ConnectionString" password="${eh.connectionstring}";

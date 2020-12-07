@@ -1,8 +1,9 @@
 # EventHub / Kafka
 
-To run this sample add an environment variable with your EventHub Connection string called 
+To run this sample add these environment variables with your EventHub Connection details 
 ```properties
+eh.bootstrapservers
 eh.connectionstring
 ```
 
-It publishes string messages onto the default topic in the connection string.
+This sample publishes string messages onto the default topic.
